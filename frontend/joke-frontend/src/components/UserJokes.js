@@ -11,7 +11,7 @@ function UserJokes() {
             const jokeData = await response.json(); // Use .json() to parse JSON response
             setJoke(`${jokeData.setup} ... ${jokeData.punchLine}`); // Format the joke
         } catch (error) {
-            console.error('Error fetching joke:', error);
+            alert('No jokes added');
         }
     };
 

@@ -4,7 +4,7 @@ import './WebJokes.css'; // Import the CSS file
 function WebJokes() {
   const [joke, setJoke] = useState('');
   console.log(process.env.REACT_APP_BACKEND_WEBSERVICE);
-  const API_URL = process.env.REACT_APP_BACKEND_WEBSERVICE || 'http://webservice-backend:8080';
+  const API_URL = process.env.REACT_APP_BACKEND_WEBSERVICE || 'http://localhost:8080';
 
   const fetchJoke = async () => {
     try {
