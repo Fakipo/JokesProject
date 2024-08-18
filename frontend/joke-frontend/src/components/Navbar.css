@@ -1,0 +1,37 @@
+/* src/components/Navbar.css */
+.navbar {
+    background-color: #333;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-item {
+    margin: 0 1rem;
+}
+
+.navbar-item {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar-item:hover {
+    background-color: #555;
+    color: #fff;
+}
+
+.navbar-item.active {
+    background-color: #222;
+    color: #ffd700; /* Highlight active item */
+}
